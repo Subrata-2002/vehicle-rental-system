@@ -84,7 +84,7 @@ export default function AdminPage() {
                   <div key={i} id="car-container">
                     <div id="img-container">
                       <img
-                        src={`http://localhost:5000/cars/${d.image}`}
+                        src={`https://rideease-ary1.onrender.com/cars/${d.image}`}
                         id="car-img"
                         alt="img-car"
                         onClick={() => {

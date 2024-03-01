@@ -17,7 +17,7 @@ export default function EditPaymentDetails(){
     function editformsubmitFunc(e){
         e.preventDefault();
 
-        fetch(`http://localhost:5000/orders/${EditPaymentDetails._id}` , {
+        fetch(`https://rideease-ary1.onrender.com/orders/${EditPaymentDetails._id}` , {
 
           method:"PATCH",
           headers:{
@@ -40,7 +40,7 @@ return<>
     <label>Car Name</label>
     
      <span id="name-of-the-car-edit-payment">{name}</span><br></br>
-    <img src={`http://localhost:5000/cars/${image}`} id="image-edit-payment-details-in-data"></img>
+    <img src={`https://rideease-ary1.onrender.com/cars/${image}`} id="image-edit-payment-details-in-data"></img>
     <label>Car Number</label>
     <span className="name-of-the-span-css-for-payment-details" id="type-of-the-car-in-payment">Ayx123</span><br/>
     </div>

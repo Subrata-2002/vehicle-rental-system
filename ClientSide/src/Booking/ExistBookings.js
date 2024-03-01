@@ -14,7 +14,7 @@ export default function ExistBookings() {
     const userId=JSON.parse(localStorage.getItem("user-id"))
     useEffect(()=>{
 
-     fetch(`http://localhost:5000/orders/${userId}`)
+     fetch(`https://rideease-ary1.onrender.com/orders/${userId}`)
 
         .then(res=>res.json())
         .then(data=>setBookData((data.data).reverse()))
@@ -24,7 +24,7 @@ export default function ExistBookings() {
 
     function deleteCarData(id){
 
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://rideease-ary1.onrender.com/orders/${id}`, {
 
             method: 'DELETE',
             headers:{
@@ -51,7 +51,7 @@ export default function ExistBookings() {
                         <p>My Booking </p>
                         <div className="bookings">
                             <div id="myimg" className="smallerDiv" >
-                                <img src={`http://localhost:5000/cars/${d.image}`} width="250px" />
+                                <img src={`https://rideease-ary1.onrender.com/cars/${d.image}`} width="250px" />
                             </div>
 
                             <div id="toyota" className="smallerDiv">
