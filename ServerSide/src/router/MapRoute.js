@@ -9,7 +9,7 @@ router.get('/route/:origin/:destination', async (req, res) => {
   try {
     const response = await axios.get(`https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=${origin}&end=${destination}`);
     res.json(response.data);
-    console.log(response)
+    // console.log(response)
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server error' });

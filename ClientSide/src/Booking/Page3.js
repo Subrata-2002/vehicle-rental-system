@@ -25,7 +25,7 @@ import Home from '../Components/Home';
         data.append("destination",destination)
         data.append("startDate",startDate)
         data.append("endDate",endDate)
-        console.log(inputdata);
+        // console.log(inputdata);
         navigate('/orderpage')
       }
 setheaderData(inputdata);

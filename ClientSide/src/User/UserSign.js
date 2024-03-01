@@ -28,7 +28,7 @@ function UserSign() {
   // const navigate = useNavigate();
   const onSubmitData = async (e) => {
     e.preventDefault();
-    console.log(inputdata);
+    // console.log(inputdata);
     const { Name, email, contact, password, Confirm_Password } = inputdata;
 
     if (email === "") {

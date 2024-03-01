@@ -19,7 +19,7 @@ export default function ExistBookings() {
         .then(res=>res.json())
         .then(data=>setBookData((data.data).reverse()))
     },[])
-    console.log(Bookdata)
+    // console.log(Bookdata)
 
 
     function deleteCarData(id){
@@ -38,7 +38,7 @@ export default function ExistBookings() {
         })
    
     }
-    console.log(Bookdata)
+    // console.log(Bookdata)
   
     return <>
  

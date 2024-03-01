@@ -3,7 +3,7 @@ import React from 'react'
 function CarCard({ image, name, milage }) {
 
   const bookCar = (e) => {
-    console.log(e.target);
+    // console.log(e.target);
   }
 
   return (

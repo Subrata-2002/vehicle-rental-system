@@ -11,7 +11,7 @@ const userId=JSON.parse(localStorage.getItem("user-id"))
 const navigate= useNavigate();
 
   const {CarData , headerData} = useContext(CarContextDetails)
-  console.log(CarData)
+  // console.log(CarData)
   const date= new Date().toLocaleDateString();
   const time = new Date().toLocaleTimeString();
   const BookingId= new Date().getTime();
@@ -33,7 +33,7 @@ const navigate= useNavigate();
   startDate:headerData.startDate,
   endDate:headerData.endDate,
   };
-console.log(headerData)
+// console.log(headerData)
 let Distance ,pricing,Subtotal,Tax,total;
 if(!isNaN(CarData.distance)){
   Distance = parseInt(headerData.distance);
@@ -58,7 +58,9 @@ const Proceed = () => {
    },
    body:JSON.stringify(Object)
    }).then(res=>res.json())
-   .then(data=>console.log(data));
+   .then(data=>
+    console.log(data)
+    );
 
 
 navigate("/ExistBookings")

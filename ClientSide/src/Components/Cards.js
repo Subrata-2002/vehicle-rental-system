@@ -18,7 +18,7 @@ export default function Cards() {
   }, [])
 
   const [bookData, setbookData] = useState([])
-  console.log(bookData);
+  // console.log(bookData);
 
   return <>
     <div id="mainParents">

@@ -113,7 +113,7 @@ function AdminLogin() {
           Navigater("/admin-page");
           // setLoder(false);
 
-          console.log("yes here i am");
+          // console.log("yes here i am");
         } else {
           setLoder(false);
           setError("Admin Details Not Match");
@@ -122,7 +122,7 @@ function AdminLogin() {
         setLoder(false);
         setError("An error occurred while processing your request");
       }
-      console.log("After fetch");
+      // console.log("After fetch");
     }
     // window.location.reload();   
   };

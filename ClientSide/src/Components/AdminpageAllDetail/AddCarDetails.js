@@ -28,9 +28,9 @@ const [loder , setLoder] = useState(false);
 const TokenAdmin= JSON.parse(localStorage.getItem("token-admin"))
     function submitFunction(e){
      e.preventDefault();
-        console.log(data)
+      //   console.log(data)
         const newformData = new FormData(e.target)
-        console.log(newformData)
+      //   console.log(newformData)
         addCar(newformData).then(data=>{
             setCar(d=>{
               return [data,...d]

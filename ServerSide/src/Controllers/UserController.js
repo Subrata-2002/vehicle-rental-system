@@ -9,15 +9,15 @@ const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const userRegisterCtrl = expressAsyncHandler(async (req, res) => {
     try {
-        console.log("hello");
+        // console.log("hello");
         let { password, email, Name } = req.body;
-        console.log(req.body);
+        // console.log(req.body);
         let hashedPassword = await bcrypt.hash(password, 10);
 
         let user = await User.findOne({ email });
         if (user)
         {
-            console.log("User with the same email already exists");
+            // console.log("User with the same email already exists");
          return res.status(400).json({ status: "Failed", field: "email", message: "Email already exist!!" })
         }
             
@@ -25,8 +25,8 @@ const userRegisterCtrl = expressAsyncHandler(async (req, res) => {
             ...req.body,
             password: hashedPassword
         });
-        console.log(newUser);
-        console.log(req.body);
+        // console.log(newUser);
+        // console.log(req.body);
         await newUser.save();
         res.status(201).json({ status: "Success", message: "User registered successfully" });
     } catch (err) {

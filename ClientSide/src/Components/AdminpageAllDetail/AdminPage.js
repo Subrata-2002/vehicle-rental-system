@@ -26,7 +26,7 @@ export default function AdminPage() {
         }
         console.log("Fetching car data...");
         const data = await GetCars();
-        console.log("Car data fetched:", data);
+        // console.log("Car data fetched:", data);
         setCar(data.reverse());
       } catch (error) {
         console.error("Error fetching car data:", error);
@@ -41,9 +41,9 @@ export default function AdminPage() {
 
   const adminName = JSON.parse(localStorage.getItem("name-admin"));
 
-  console.log(adminName);
+  // console.log(adminName);
 
-  console.log(car);
+  // console.log(car);
   return (
     <>
       <AdminpageNav />
@@ -89,23 +89,23 @@ export default function AdminPage() {
                         alt="img-car"
                         onClick={() => {
                           if (AdminId !== d.AdminId) {
-                            console.log(d.AdminId);
+                            // console.log(d.AdminId);
                             setErr(
                               "You Don't Have Access To Edit This Details"
                             );
                             setOk("OK");
                           } else {
-                            console.log(d.AdminId);
+                            // console.log(d.AdminId);
                             setEdit(d);
                             Navigater("/edit-car-details");
                           }
                         }}
                       />
                     </div>
-                    <div id="person-of-admin-page-in-my-page">6 persons</div>
+                    <div id="person-of-admin-page-in-my-page">Persons/Transport</div>
                     <div id="name-container-of-the-file-data">
                       <h5>{d.name}</h5>
-                      <h5 id="milage-of-my-admin-page-details">{`${d.perKm}RS/KM`}</h5>
+                      <h5 id="milage-of-my-admin-page-details">{`${d.perKm}₹/KM`}</h5>
                     </div>
                     <hr />
                     <div id="date-container-of-the-file-data-date">
