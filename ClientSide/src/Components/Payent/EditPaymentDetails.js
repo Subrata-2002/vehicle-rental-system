@@ -73,7 +73,7 @@ return<>
 <div id="form-rightside-edit-part-in-payment">
     <label>pricekm</label>
 
-    <span className="name-of-the-span-css-for-payment-details">{perKm}RS/KM</span><br></br>
+    <span className="name-of-the-span-css-for-payment-details">{perKm}₹/KM</span><br></br>
     <label>pricing</label>
     <span className="name-of-the-span-css-for-payment-details">3084 RS</span><br></br>
     <label>tax charges</label>
