@@ -1,6 +1,6 @@
 
 // const API_BASE_URL= 'https://car-rental-app-server.onrender.com';
-const   API_BASE_URL = 'http://localhost:5000'
+const   API_BASE_URL = 'https://rideease-ary1.onrender.com/'
 
 
 function GetCars(){

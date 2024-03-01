@@ -1,6 +1,6 @@
 
 // const API_USER="https://car-rental-app-server.onrender.com"
-const API_USER="http://localhost:5000"
+const API_USER="https://rideease-ary1.onrender.com/"
 
 
 async function addUser(UserData){
