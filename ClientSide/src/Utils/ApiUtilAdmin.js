@@ -1,6 +1,6 @@
 
 // const API_ADMIN="https://car-rental-app-server.onrender.com"
-const API_ADMIN = "https://rideease-ary1.onrender.com/"
+const API_ADMIN = "https://rideease-ary1.onrender.com"
 
 
 function addAdmin(AdminData){
